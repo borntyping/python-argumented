@@ -5,7 +5,7 @@ setup(
     name             = 'argumented',
     version          = __version__,
     description      = __doc__,
-    long_description = open("README.md").read(),
+    long_description = open("README.rst").read(),
 
     author           = 'Sam Clements',
     author_email     = 'sam@borntyping.co.uk',
@@ -21,6 +21,6 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
-        'Topic :: Software Development :: Testing'
+        'Topic :: Software Development :: Testing',
     ],
 )
