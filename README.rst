@@ -2,6 +2,14 @@
 argumented
 ==========
 
+.. image:: https://pypip.in/v/argumented/badge.png
+    :target: https://crate.io/packages/argumented/
+    :alt: Latest PyPI version
+
+.. image:: https://pypip.in/d/argumented/badge.png
+    :target: https://crate.io/packages/argumented/
+    :alt: Number of PyPI downloads
+
 **argumented** provides a way of 'multiplying' functions - usually test cases - allowing them to be called with multiple argument sets and still appear as seperate functions.
 
 It provides several decorators that can be used to add argument sets, and then unpack them.
