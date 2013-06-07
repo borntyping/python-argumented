@@ -14,16 +14,13 @@ class TestArgumentedCases(TestCase):
 		self.assertEquals(thing, "world")
 	
 	@argument_list(1, 2)
-	def test_with_arguments(self, n):
+	def test_with_argument_list (self, n):
 		self.assertIsInstance(n, int)
 
 	@argument_tuples(([1, 2], {'a': 'A'}), ([1, 2], {'a': 'B'}))
-	def test_with_arguments(self, *args, **kwargs):
+	def test_with_argument_tuples(self, *args, **kwargs):
 		self.assertEquals(args, (1, 2))
 		self.assertIn(kwargs['a'], ['A', 'B'])
 
 if __name__ == '__main__':
     main()
-    
-    TextTestRunner(verbosity=1).run(
-        TestLoader().loadTestsFromTestCase(TestArgumentedCases))
