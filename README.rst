@@ -59,7 +59,7 @@ In the following example, each test cases would be replaced with two test cases,
 			self.assertEquals(args, (1, 2))
 			self.assertIn(kwargs['a'], ['A', 'B'])
 
-This example can also be found in ``argumented/test_example.py``.
+This example can also be found in ``test_argumented.py``.
 
 License
 =======

@@ -6,7 +6,7 @@ __all__ = ['unpack_arguments', 'argument', 'argument_list', 'argument_tuples']
 
 from functools import wraps
 
-def unpack_arguments (cls):
+def unpack_arguments(cls):
 	"""
 	Unpacks any function in the class that has a list of argumented functions
 	
@@ -20,7 +20,7 @@ def unpack_arguments (cls):
 			delattr(cls, name)
 	return cls
 
-def pack_arguments (func, *args, **kwargs):
+def pack_arguments(func, *args, **kwargs):
 	"""
 	Packs a wrapper around `func` into `func.__argumented__`
 	
@@ -43,14 +43,14 @@ def pack_arguments (func, *args, **kwargs):
 	
 	return func
 
-def argument (*args, **kwargs):
+def argument(*args, **kwargs):
 	"""	Calls `pack_arguments` with the given arguments """
 	return lambda f: pack_arguments(f, *args, **kwargs) and f
 	
-def argument_list (*args):
+def argument_list(*args):
 	"""	Calls `pack_arguments` with each given argument """
 	return lambda f: [pack_arguments(f, a) for a in args] and f
 
-def argument_tuples (*args):
+def argument_tuples(*args):
 	"""	Calls `pack_arguments` with each given argument list """
 	return lambda f: [pack_arguments(f, *a, **b) for (a, b) in args] and f
