@@ -1,6 +1,6 @@
-==============
-``argumented``
-==============
+==========
+argumented
+==========
 
 .. image:: https://pypip.in/v/argumented/badge.png
     :target: https://pypi.python.org/pypi/argumented/
@@ -10,7 +10,7 @@
     :target: https://travis-ci.org/borntyping/python-argumented
     :alt: Travis build status
 
-``argumented`` provides a way of 'multiplying' functions - usually test cases - allowing them to be called with multiple argument sets and still appear as seperate functions.
+**argumented** provides a way of 'multiplying' functions - usually test cases - allowing them to be called with multiple argument sets and still appear as separate functions.
 
 It provides several decorators that can be used to add argument sets, and then unpack them.
 
@@ -72,4 +72,4 @@ This example can also be found in ``test_argumented.py``.
 License
 =======
 
-``argumented`` is licensed under the MIT License and was originally inspired by `ddt <http://github.com/santtu/ddt>`_.
+**argumented** is licensed under the MIT License and was originally inspired by `ddt <http://github.com/santtu/ddt>`_.
