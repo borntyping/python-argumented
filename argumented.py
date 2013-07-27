@@ -13,7 +13,7 @@ def unpack_arguments(cls):
 	The argumented functions are set as attributes on the class,
 	and the original function is removed from the class
 	"""
-	for name, attr in cls.__dict__.items():
+	for name, attr in list(cls.__dict__.items()):
 		if callable(attr) and hasattr(attr, '__argumented__'):
 			for i, func in enumerate(attr.__argumented__):
 				setattr(cls, name + "_" + str(i), func)

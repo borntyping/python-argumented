@@ -11,7 +11,7 @@ class TestArgumentedCases(TestCase):
 	@argument("goodbye", thing="world")
 	def test_greeting(self, greeting, thing):
 		self.assertTrue(greeting in ["hello", "goodbye"])
-		self.assertEquals(thing, "world")
+		self.assertEqual(thing, "world")
 	
 	@argument_list(1, 2)
 	def test_with_argument_list (self, n):
@@ -19,7 +19,7 @@ class TestArgumentedCases(TestCase):
 
 	@argument_tuples(([1, 2], {'a': 'A'}), ([1, 2], {'a': 'B'}))
 	def test_with_argument_tuples(self, *args, **kwargs):
-		self.assertEquals(args, (1, 2))
+		self.assertEqual(args, (1, 2))
 		self.assertTrue(kwargs['a'] in ['A', 'B'])
 
 if __name__ == '__main__':
