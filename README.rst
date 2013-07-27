@@ -6,7 +6,7 @@ argumented
     :target: https://pypi.python.org/pypi/argumented/
     :alt: Latest PyPI version
 
-.. image:: https://travis-ci.org/borntyping/python-argumented.png
+.. image:: https://api.travis-ci.org/borntyping/python-argumented.png
     :target: https://travis-ci.org/borntyping/python-argumented
     :alt: Travis build status
 
